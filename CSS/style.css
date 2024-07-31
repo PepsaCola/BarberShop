@@ -1,0 +1,35 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+body {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+header {
+  height: 680px;
+  display: flex;
+}
+header div {
+  width: 90%;
+  position: relative;
+}
+header aside {
+  width: 10%;
+  text-align: center;
+}
+header div img {
+  height: 680px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.section-2 {
+  display: flex;
+}
+
+.section-3 {
+  display: flex;
+}
