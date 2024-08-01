@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./CSS/style.css" />
-    <title>Document</title>
+    <title>BarderShop</title>
   </head>
 
   <body>
@@ -15,20 +26,24 @@
 
       <div>
         <img src="./images/Slider.jpg" alt="logo" />
+
         <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services and prices</a></li>
-            <li><a href="#">Barbers</a></li>
-            <li><a href="#">Contacts</a></li>
+          <ul class="header-nav">
+            <li><a class="header-nav-link" href="#">About</a></li>
+            <li>
+              <a class="header-nav-link" href="#">Services and prices</a>
+            </li>
+            <li><a class="header-nav-link" href="#">Barbers</a></li>
+            <li><a class="header-nav-link" href="#">Contacts</a></li>
           </ul>
         </nav>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-        <button type="button">Online-booking</button>
+        <a class="header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="header-button" type="button">Online-booking</button>
+
         <section>
-          <span>A hair salon for men in Kyiv</span>
-          <h1>BarberShop</h1>
-          <p>
+          <span class="uptitle hero-uptitle">A hair salon for men in Kyiv</span>
+          <h1 class="hero-title">BarberShop</h1>
+          <p class="hero-subtitle">
             We are experts in trendy men’s haircuts. We work quickly, carefully
             and with style.
           </p>
@@ -58,7 +73,7 @@
         </ul>
         <div>
           <span>About</span>
-          <h2>Best Barbershop in your city</h2>
+          <h2 class="section-title">Best Barbershop in your city</h2>
           <p>
             If you want to add more confidence to your image, you should
             definitely visit us.
@@ -130,7 +145,7 @@
         </ul>
         <div>
           <span>Old traditional school</span>
-          <h2>¿Why people come to us?</h2>
+          <h2 class="section-title">¿Why people come to us?</h2>
           <p>
             Only good things are said about us. But it's better to see and feel
             1 time than read 10 times.

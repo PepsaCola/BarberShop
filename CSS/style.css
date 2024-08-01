@@ -1,10 +1,15 @@
-/* * {
+:root {
+  --color-grey: #303030;
+}
+
+* {
   margin: 0;
   padding: 0;
-} */
+}
 body {
   width: 1170px;
   margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
@@ -27,9 +32,91 @@ header div img {
 }
 
 .section-2 {
-  display: flex;
+  /* display: flex; */
 }
 
 .section-3 {
+  /* display: flex; */
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  width: 953px;
   display: flex;
+}
+
+header a {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-nav {
+  list-style: none;
+}
+
+.header-nav-link {
+  text-decoration: none;
+}
+
+.header-nav-link:hover {
+  color: #ff6c00;
+}
+.header-contact {
+  text-transform: uppercase;
+}
+
+.header-button {
+  box-sizing: border-box;
+  background: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1, 3333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.uptitle {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--color-grey);
+}
+.hero-uptitle {
+  color: #9da4bd99;
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: 1.1805;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.section-title {
+  font-size: 42px;
+  line-height: 1.1666;
+  letter-spacing: 0.05em;
 }
