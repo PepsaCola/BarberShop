@@ -13,22 +13,27 @@ body {
 }
 
 header {
-  height: 680px;
   display: flex;
+  background-color: #555555;
 }
 header div {
   width: 90%;
-  position: relative;
 }
 header aside {
   width: 10%;
+
+  display: flex;
   text-align: center;
 }
 header div img {
-  height: 680px;
-  width: 100%;
   position: absolute;
   z-index: -1;
+}
+
+.section-1 {
+  height: 680px;
+  width: 90%;
+  background-image: url(../images/Slider.jpg);
 }
 
 .section-2 {
@@ -51,6 +56,21 @@ ul {
 .nav {
   width: 953px;
   display: flex;
+}
+
+.btn {
+  font-family: inherit;
+  box-sizing: border-box;
+  background: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1, 3333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
 }
 
 header a {
@@ -78,6 +98,7 @@ header a {
 }
 
 .header-button {
+  font-family: inherit;
   box-sizing: border-box;
   background: none;
   font-weight: 600;
@@ -88,14 +109,14 @@ header a {
   color: #ffffff;
   border: 1px solid #ff6c00;
   border-radius: 25px;
+  cursor: pointer;
 }
 
 .uptitle {
   font-weight: 600;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.36;
   text-transform: uppercase;
-  color: var(--color-grey);
 }
 .hero-uptitle {
   color: #9da4bd99;
@@ -115,8 +136,181 @@ header a {
   color: #9da4bd;
 }
 
+.hero-link {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  line-height: 1.36;
+  color: #303030;
+  text-decoration: none;
+}
+
+/* ABOUT */
+.about {
+}
 .section-title {
   font-size: 42px;
   line-height: 1.1666;
   letter-spacing: 0.05em;
+  color: #303030;
+}
+.about-uptitle {
+  color: #303030;
+}
+.about-subtitle {
+  color: #555555;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+.about-text {
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+.about-btn {
+  color: #303030;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.33;
+  text-transform: uppercase;
+  letter-spacing: 1.08px;
+  cursor: pointer;
+}
+
+/* PRICES */
+
+.prices {
+  background-color: #555555;
+}
+.prices-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+  color: #ffffff;
+}
+.prices-item-text {
+  color: #9da4bd;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+}
+.prices-btn {
+  color: white;
+  font-size: 12px;
+  line-height: 1.33;
+  font-family: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.08px;
+  cursor: pointer;
+}
+
+/* BENEFITS */
+.benefits {
+}
+.benefits-count {
+  font-weight: 700;
+  color: #303030;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 2.1px;
+}
+.benefits-plus {
+  text-align: center;
+  color: #ff6c00;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  font-weight: 600;
+}
+.benefits-item-text {
+  text-align: center;
+  color: #303030;
+  font-size: 11px;
+  line-height: 1.36;
+  font-weight: 600;
+}
+.benefits-uptitle {
+  color: #303030;
+}
+.benefits-title {
+  color: #303030;
+}
+.benefits-subtitle {
+  color: #555555;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+}
+
+/* BARBERS */
+
+.barbers {
+}
+.barbers-uptitle {
+  color: #303030;
+}
+.barbers-title {
+  color: #303030;
+}
+.barbers-item-title {
+  text-align: center;
+  color: #303030;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  font-weight: 400;
+  letter-spacing: 0.36px;
+}
+.barbers-item-text {
+  text-align: center;
+  color: #ff6c00;
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  letter-spacing: 0.28px;
+}
+
+/* GALLERY */
+
+.gallery {
+}
+.gallery-uptitle {
+  color: #303030;
+}
+
+/* CONTACTS */
+.contacts {
+  background-color: #303030;
+}
+.contacts-title {
+  color: #ffffff;
+}
+.contacts-address {
+  font-style: inherit;
+}
+.contacts-link {
+  font-size: 18px;
+  color: #9da4bd;
+
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+}
+.contacts-link-bold {
+  font-weight: 700;
+}
+.contacts-schedule-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.contacts-schedule-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
