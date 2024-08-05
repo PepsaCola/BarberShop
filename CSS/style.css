@@ -7,33 +7,18 @@
   padding: 0;
 }
 body {
-  width: 1170px;
-  margin: 0 auto;
   font-family: "Open Sans", sans-serif;
 }
 
 header {
-  display: flex;
   background-color: #555555;
-}
-header div {
-  width: 90%;
-}
-header aside {
-  width: 10%;
-
-  display: flex;
-  text-align: center;
-}
-header div img {
-  position: absolute;
-  z-index: -1;
+  padding: 0 32px;
 }
 
-.section-1 {
-  height: 680px;
-  width: 90%;
-  background-image: url(../images/Slider.jpg);
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
 }
 
 .section-2 {
@@ -53,10 +38,10 @@ ul {
   list-style: none;
 }
 
-.nav {
+/* .nav {
   width: 953px;
   display: flex;
-}
+} */
 
 .btn {
   font-family: inherit;
@@ -120,13 +105,18 @@ header a {
 }
 .hero-uptitle {
   color: #9da4bd99;
+  margin-bottom: 20px;
 }
-
+.hero-wrap {
+  background-image: url(../images/Slider.jpg);
+  padding: 272px 100px 208px 100px;
+}
 .hero-title {
   font-size: 72px;
   line-height: 1.1805;
   letter-spacing: 0.05em;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .hero-subtitle {
@@ -147,15 +137,18 @@ header a {
 
 /* ABOUT */
 .about {
+  padding: 120px 0;
 }
 .section-title {
   font-size: 42px;
   line-height: 1.1666;
   letter-spacing: 0.05em;
   color: #303030;
+  padding-bottom: 20px;
 }
 .about-uptitle {
   color: #303030;
+  padding-bottom: 20px;
 }
 .about-subtitle {
   color: #555555;
@@ -163,12 +156,14 @@ header a {
   font-weight: 400;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  padding-bottom: 20px;
 }
 .about-text {
   color: #555555;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
+  padding-bottom: 42px;
 }
 .about-btn {
   color: #303030;
@@ -185,6 +180,7 @@ header a {
 
 .prices {
   background-color: #555555;
+  padding: 120px 0;
 }
 .prices-uptitle {
   color: rgba(157, 164, 189, 0.6);
@@ -207,10 +203,24 @@ header a {
   text-transform: uppercase;
   letter-spacing: 1.08px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.prices-list {
+  border: 1px solid white;
+  padding: 30px 20px;
 }
 
 /* BENEFITS */
 .benefits {
+  padding: 120px 0;
+}
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  border: 1px solid #000;
+  padding: 20px 24px;
+  text-align: center;
 }
 .benefits-count {
   font-weight: 700;
@@ -236,9 +246,11 @@ header a {
 }
 .benefits-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 .benefits-title {
   color: #303030;
+  margin-bottom: 20px;
 }
 .benefits-subtitle {
   color: #555555;
@@ -250,12 +262,15 @@ header a {
 /* BARBERS */
 
 .barbers {
+  padding: 120px 0;
 }
 .barbers-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 .barbers-title {
   color: #303030;
+  margin-bottom: 44px;
 }
 .barbers-item-title {
   text-align: center;
@@ -264,6 +279,7 @@ header a {
   line-height: calc(25 / 18);
   font-weight: 400;
   letter-spacing: 0.36px;
+  margin-bottom: 8px;
 }
 .barbers-item-text {
   text-align: center;
