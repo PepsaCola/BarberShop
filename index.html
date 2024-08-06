@@ -26,10 +26,10 @@
 
   <body>
     <header>
-      <div class="container">
+      <div class="container header-contaiter">
         <a href="#" class="logo"><img src="./images/Logo.svg" alt="logo" /></a>
 
-        <nav>
+        <nav class="navigation">
           <ul class="header-nav">
             <li><a class="header-nav-link" href="#about">About</a></li>
             <li>
@@ -40,13 +40,13 @@
           </ul>
         </nav>
         <a class="header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-button" type="button">Online-booking</button>
+        <button class="header-button btn" type="button">Online-booking</button>
       </div>
     </header>
 
     <main>
       <section class="section-1">
-        <div class="container">
+        <div class="container hero-container">
           <ul class="hero-list">
             <li class="hero-item">
               <a
@@ -69,9 +69,7 @@
           </ul>
 
           <div class="hero-wrap">
-            <span class="uptitle hero-uptitle"
-              >A hair salon for men in Kyiv</span
-            >
+            <p class="uptitle hero-uptitle">A hair salon for men in Kyiv</p>
             <h1 class="hero-title">BarberShop</h1>
             <p class="hero-subtitle">
               We are experts in trendy men’s haircuts. We work quickly,
@@ -82,7 +80,7 @@
       </section>
 
       <section class="about" id="about">
-        <div class="container">
+        <div class="container about-container">
           <ul class="about-list">
             <li class="about-item">
               <img
@@ -101,8 +99,8 @@
               />
             </li>
           </ul>
-          <div>
-            <span class="about-uptitle uptitle">About</span>
+          <div class="about-wrap">
+            <p class="about-uptitle uptitle">About</p>
             <h2 class="section-title about-title">
               Best Barbershop in your city
             </h2>
@@ -124,51 +122,49 @@
 
       <section class="prices" id="prices">
         <div class="container">
-          <span class="prices-uptitle uptitle"
-            >Spend your time with the best masters</span
-          >
+          <p class="prices-uptitle uptitle">
+            Spend your time with the best masters
+          </p>
           <h2 class="section-title prices-title">Services and prices</h2>
-          <ul class="prices-list">
-            <li class="prices-item">
-              <p class="prices-item-text">Men’s haircut</p>
-              <span class="prices-item-text">from 300 uah.</span>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Beard trim</p>
-              <span class="prices-item-text">from 300 uah.</span>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Mustache trim</p>
-              <span class="prices-item-text">from 200 uah.</span>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">Straight razor shave</p>
-              <span class="prices-item-text">from 200 uah.</span>
-            </li>
-          </ul>
+          <div class="prices-wrap">
+            <ul class="prices-list">
+              <li class="prices-item">
+                <p class="prices-item-text">Men’s haircut</p>
+                <span class="prices-item-text">from 300 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Beard trim</p>
+                <span class="prices-item-text">from 300 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Mustache trim</p>
+                <span class="prices-item-text">from 200 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Straight razor shave</p>
+                <span class="prices-item-text">from 200 uah.</span>
+              </li>
+            </ul>
 
-          <ul class="prices-list">
-            <li class="prices-item">
-              <p class="prices-item-text">
-                Trainee’s haircut<span>from 50 uah.</span>
-              </p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">
-                Haircut under the nozzle<span>from 200 uah.</span>
-              </p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">
-                Children’s haircut (0-12 y.o.)<span>from 300 uah.</span>
-              </p>
-            </li>
-            <li class="prices-item">
-              <p class="prices-item-text">
-                Camouflage of gray hair<span>from 200 uah.</span>
-              </p>
-            </li>
-          </ul>
+            <ul class="prices-list">
+              <li class="prices-item">
+                <p class="prices-item-text">Trainee’s haircut</p>
+                <span class="prices-item-text">from 50 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Haircut under the nozzle</p>
+                <span class="prices-item-text">from 200 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Children’s haircut (0-12 y.o.)</p>
+                <span class="prices-item-text">from 300 uah.</span>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Camouflage of gray hair</p>
+                <span class="prices-item-text">from 200 uah.</span>
+              </li>
+            </ul>
+          </div>
           <button class="prices-btn btn" type="button">online-booking</button>
         </div>
       </section>
@@ -212,9 +208,9 @@
 
       <section class="barbers" id="barbers">
         <div class="container">
-          <span class="barbers-uptitle uptitle"
-            >For true enjoyers of the atmosphere</span
-          >
+          <p class="barbers-uptitle uptitle">
+            For true enjoyers of the atmosphere
+          </p>
           <h2 class="barbers-title title">Our barbers</h2>
           <ul class="barbers-list">
             <li class="barbers-item">
@@ -285,42 +281,44 @@
       </section>
 
       <section class="gallery">
-        <span class="gallery-uptitle">In Latin, "barba" means "beard"</span>
-        <h2 hidden>Portfolio</h2>
-        <ul class="gallery-list">
-          <li class="gallery-item">
-            <img
-              src="./images/berd1.jpg"
-              width="270"
-              height="360"
-              alt="berd1"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./images/berd2.jpg"
-              width="270"
-              height="360"
-              alt="berd2"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./images/berd3.jpg"
-              width="270"
-              height="360"
-              alt="berd3"
-            />
-          </li>
-          <li class="gallery-item">
-            <img
-              src="./images/berd4.jpg"
-              width="270"
-              height="360"
-              alt="berd4"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <p class="gallery-uptitle uptitle">In Latin, "barba" means "beard"</p>
+          <h2 hidden>Portfolio</h2>
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img
+                src="./images/berd1.jpg"
+                width="270"
+                height="360"
+                alt="berd1"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/berd2.jpg"
+                width="270"
+                height="360"
+                alt="berd2"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/berd3.jpg"
+                width="270"
+                height="360"
+                alt="berd3"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./images/berd4.jpg"
+                width="270"
+                height="360"
+                alt="berd4"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="contacts" id="contacts">
