@@ -119,6 +119,16 @@ header a {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.uptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+
+  background-color: currentColor;
 }
 .hero-container {
   display: flex;
@@ -219,8 +229,14 @@ header a {
 /* PRICES */
 
 .prices {
-  background-color: #555555;
+  background-color: #111319;
+  background-image: url(../images/prices.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 120px 0;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .prices-uptitle {
   color: rgba(157, 164, 189, 0.6);
@@ -238,6 +254,15 @@ header a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  align-items: baseline;
+  gap: 12px;
+}
+.prices-item::before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
 }
 .prices-item:last-child {
   margin-bottom: 0;
@@ -247,6 +272,9 @@ header a {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.36px;
+}
+.prices-item-text:first-child {
+  order: -1;
 }
 .prices-btn {
   color: white;
@@ -266,19 +294,46 @@ header a {
   padding: 30px 20px;
   width: calc((100% - 30px) / 2);
 }
-
+.prices-list:first-child {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-list:last-child {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
 /* BENEFITS */
 .benefits {
   padding: 120px 0;
 }
+.benefits-container {
+  display: flex;
+  padding-left: 115px;
+  gap: 130px;
+}
+.benefits-wrap {
+  max-width: 500px;
+  padding-top: 9px;
+}
+.benefits-list {
+  display: flex;
+  width: 370px;
+  flex-wrap: wrap;
+
+  flex-shrink: 0;
+}
 .benefits-item {
   width: 170px;
   height: 133px;
-  border: 1px solid #000;
+  background: #f7f7f7;
   padding: 20px 24px;
   text-align: center;
 }
 
+.benefits-item:nth-child(odd) {
+  margin-right: 30px;
+}
+.benefits-item:nth-child(even) {
+  margin-top: 30px;
+}
 .benefits-count {
   font-weight: 700;
   color: #303030;
@@ -293,6 +348,9 @@ header a {
   font-size: 16px;
   line-height: calc(22 / 16);
   font-weight: 600;
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 10px;
 }
 .benefits-item-text {
   text-align: center;
@@ -395,16 +453,46 @@ header a {
 .gallery-item {
   width: calc((100%-90px) / 4);
 }
+/* ONLINE */
+
+.online {
+  width: calc(50% + 15px);
+  padding-top: 130px;
+}
+.online-title {
+  color: white;
+}
 
 /* CONTACTS */
+
 .contacts {
-  background-color: #303030;
+  width: calc(50% - 15px);
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+}
+.contacts-wrap {
+  background-color: #191c26;
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.contacts-wrap > .container {
+  display: flex;
 }
 .contacts-title {
   color: #ffffff;
+  margin-bottom: 44px;
 }
 .contacts-address {
   font-style: inherit;
+  margin-bottom: 70px;
+}
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .contacts-link {
   font-size: 18px;
@@ -422,6 +510,8 @@ header a {
   line-height: 1.36;
   text-transform: uppercase;
   color: #ffffff;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .contacts-schedule-text {
   font-size: 18px;

@@ -27,7 +27,11 @@
   <body>
     <header>
       <div class="container header-contaiter">
-        <a href="#" class="logo"><img src="./images/logo.svg" alt="logo" /></a>
+        <a href="">
+          <svg class="logo" width="69" height="55">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
 
         <nav class="navigation">
           <ul class="header-nav">
@@ -170,7 +174,7 @@
       </section>
 
       <section class="benefits">
-        <div class="container">
+        <div class="container benefits-container">
           <ul class="benefits-list">
             <li class="benefits-item">
               <span class="benefits-count">600</span
@@ -193,7 +197,7 @@
               <p class="benefits-item-text">Gifts for regular customers</p>
             </li>
           </ul>
-          <div>
+          <div class="benefits-wrap">
             <span class="benefits-uptitle uptitle">Old traditional school</span>
             <h2 class="section-title benefits-title">
               ¿Why people come to us?
@@ -377,35 +381,41 @@
           </ul>
         </div>
       </section>
-
-      <section class="contacts" id="contacts">
-        <h2 class="contacts-title title">Contacts</h2>
-        <address class="contacts-address">
-          <ul class="contacts-list">
-            <li class="contacts-item">
-              <a
-                class="contacts-link contacts-link-bold"
-                href="https://maps.app.goo.gl/GJNfZ2V8p2rHckgi6"
-                target="_blank"
-                rel="noopener noreferrer"
-                >st. Vasilkivska, 7A Kyiv, 08132</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="tel:+380441111111"
-                >+38 044 111 11 11</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link" href="mailto:barbershop@email.com"
-                >barbershop@email.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <span class="contacts-schedule-title">Working hours</span>
-        <p class="contacts-schedule-text">Every day from 9:00 to 22:00</p>
-      </section>
+      <div class="contacts-wrap">
+        <div class="container">
+          <section class="online">
+            <h2 class="online-title">Online-booking</h2>
+          </section>
+          <section class="contacts" id="contacts">
+            <h2 class="contacts-title title">Contacts</h2>
+            <address class="contacts-address">
+              <ul class="contacts-list">
+                <li class="contacts-item">
+                  <a
+                    class="contacts-link contacts-link-bold"
+                    href="https://maps.app.goo.gl/GJNfZ2V8p2rHckgi6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >st. Vasilkivska, 7A Kyiv, 08132</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link" href="tel:+380441111111"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-link" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <span class="contacts-schedule-title">Working hours</span>
+            <p class="contacts-schedule-text">Every day from 9:00 to 22:00</p>
+          </section>
+        </div>
+      </div>
     </main>
     <footer>
       <p>&#169; Copyright 2020</p>
