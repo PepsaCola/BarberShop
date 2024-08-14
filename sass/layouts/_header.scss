@@ -1,0 +1,59 @@
+header {
+  padding: 0 32px;
+  position: absolute;
+  width: 100%;
+}
+
+.header-contaiter {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 131px;
+}
+
+header a {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navigation {
+  margin-right: auto;
+}
+.header-nav {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  transition: color 300ms linear;
+}
+
+.header-nav-link:hover {
+  color: #ff6c00;
+}
+.header-contact {
+  text-transform: uppercase;
+}
+
+.header-button {
+  font-family: inherit;
+  box-sizing: border-box;
+  background: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1, 3333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 43px;
+}
