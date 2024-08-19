@@ -1,23 +1,65 @@
 .about {
-  padding: 120px 0;
+  padding: 84px 0;
+  @include tablet {
+    padding: 100px 0;
+  }
+  @include desctop {
+    padding: 120px 0;
+  }
 }
 .about-container {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
 .about-list {
-  display: flex;
   gap: 30px;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desctop {
+    flex-wrap: nowrap;
+  }
+}
+.about-item {
+  width: 330px;
+  height: 235px;
+  @include desctop {
+    width: 270px;
+    height: 445px;
+  }
+}
+.about-item:first-child {
+  background-image: url(../../images/best1-tablet.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include desctop {
+    background-image: url(../../images/best1.jpg);
+  }
+}
+.about-item:last-child {
+  background-image: url(../../images/best2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .about-wrap {
-  max-width: 470px;
+  max-width: 480px;
 }
 .section-title {
-  font-size: 42px;
+  font-size: 28px;
   line-height: 1.1666;
   letter-spacing: 0.05em;
   color: #303030;
   padding-bottom: 20px;
+  width: 306px;
+  @include desctop {
+    font-size: 42px;
+    width: auto;
+  }
 }
 .about-uptitle {
   color: #303030;
@@ -25,11 +67,14 @@
 }
 .about-subtitle {
   color: #555555;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.67;
   letter-spacing: 0.02em;
   padding-bottom: 20px;
+  @include desctop {
+    font-size: 18px;
+  }
 }
 .about-text {
   color: #555555;

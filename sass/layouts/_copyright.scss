@@ -1,11 +1,11 @@
 .footer {
-  padding: 56px 212px;
+  padding: 56px 0;
   display: flex;
-  max-width: 1600px;
+
+  justify-content: space-between;
   margin: 0 auto;
 }
 .copyright {
-  margin-right: auto;
 }
 .footer-list {
   display: flex;

@@ -1,14 +1,15 @@
-.container {
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 15px;
+@mixin mobile() {
   @media screen and (min-width: 480px) {
-    min-width: 448px;
+    @content;
   }
+}
+@mixin tablet() {
   @media screen and (min-width: 768px) {
-    max-width: 720px;
+    @content;
   }
+}
+@mixin desctop() {
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
+    @content;
   }
 }

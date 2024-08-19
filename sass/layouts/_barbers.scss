@@ -1,6 +1,22 @@
 .barbers {
-  padding: 120px 0;
   background-color: #f7f7f7;
+  padding: 84px 0;
+  @include tablet {
+    padding: 100px 0;
+  }
+  @include desctop {
+    padding: 120px 0;
+  }
+}
+.barbers-container {
+  margin: 0 auto;
+  width: 418px;
+  @include tablet {
+    width: 450px;
+  }
+  @include desctop {
+    width: 1200px;
+  }
 }
 .barbers-uptitle {
   color: #303030;
@@ -30,11 +46,20 @@
 }
 .barbers-list {
   display: flex;
-  gap: 30px;
+  gap: 64px;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include desctop {
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
 }
-
+.barbers-img {
+  background-image: url(../../images/img1-mb.jpg);
+}
 .barbers-item {
-  width: calc((100% - 60px) / 3);
+  // width: calc((100% - 60px) / 3);
+  width: 418px;
 }
 .barbers-item:hover .barbers-top-text {
   transform: translateY(0);

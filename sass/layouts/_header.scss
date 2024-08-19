@@ -2,17 +2,27 @@ header {
   padding: 0 32px;
   position: absolute;
   width: 100%;
+  margin-top: 40px;
 }
 
 .header-contaiter {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  margin-right: 131px;
+  margin-left: auto;
+  fill: #ffffff;
+  @include tablet {
+    fill: #303030;
+  }
+  @include tablet {
+    margin-right: 58px;
+  }
 }
-
+.menu-icon {
+  fill: #ffffff;
+}
 header a {
   font-size: 12px;
   font-weight: 600;
@@ -23,23 +33,62 @@ header a {
 }
 .navigation {
   margin-right: auto;
+  display: none;
+  @include tablet {
+    display: flex;
+  }
 }
 .header-nav {
   list-style: none;
   display: flex;
   gap: 30px;
+  @include tablet {
+    gap: 20px;
+    padding-top: 12px;
+  }
+  @include desctop {
+    gap: 30px;
+    padding-top: 20px;
+    margin-left: 80px;
+  }
 }
 
 .header-nav-link {
   text-decoration: none;
   transition: color 300ms linear;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
 }
 
+.nav-rightpart {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 45px;
+  justify-content: center;
+  width: 162px;
+  gap: 20px;
+
+  @include desctop {
+    flex-wrap: nowrap;
+    width: auto;
+    margin-right: 17px;
+    align-items: center;
+  }
+}
 .header-nav-link:hover {
   color: #ff6c00;
 }
 .header-contact {
   text-transform: uppercase;
+  display: none;
+  @include tablet {
+    display: block;
+    order: 2;
+  }
+  @include desctop {
+    order: 1;
+  }
 }
 
 .header-button {
@@ -55,5 +104,101 @@ header a {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   cursor: pointer;
-  margin-left: 43px;
+  display: none;
+  @include tablet {
+    display: block;
+    order: 1;
+  }
+  @include desctop {
+    order: 2;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #ffffff;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  z-index: 1;
+  > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.menu-open {
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  @include tablet {
+    display: none;
+  }
+}
+.menu-close {
+  position: absolute;
+  right: 31px;
+  width: 40px;
+  height: 40px;
+}
+.menu-list {
+  margin-top: 118px;
+}
+.menu-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.menu-link {
+  color: #303030;
+  font-size: 18px;
+
+  font-weight: 600;
+  letter-spacing: 1.8px;
+}
+.menu-contact {
+  color: #303030;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin-top: 64px;
+  margin-bottom: 19px;
+}
+.menu-button {
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 69px;
+  color: #303030;
+}
+
+.menu-soc-list {
+  position: relative;
+  padding-left: 100px;
+}
+.menu-soc-list::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+}
+.menu-soc-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.menu-soc-link {
+  color: #303030;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.8px;
 }

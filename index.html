@@ -48,10 +48,62 @@
             <li><a class="header-nav-link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
-        <a class="header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="header-button btn" type="button" data-modal-open>
-          Online-booking
+        <div class="nav-rightpart">
+          <a class="header-contact" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="header-button btn" type="button" data-modal-open>
+            Online-booking
+          </button>
+        </div>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
         </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <button type="button" class="menu-close" data-menu-close>X</button>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="#about">About</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#prices">Services and prices</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#barbers">Barbers</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <a class="menu-contact" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="menu-button btn" type="button" data-modal-open>
+            Online-booking
+          </button>
+          <ul class="menu-soc-list">
+            <li class="menu-soc-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="menu-soc-link"
+                >Instagram</a
+              >
+            </li>
+            <li class="menu-soc-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                class="menu-soc-link"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -96,20 +148,20 @@
         <div class="container about-container">
           <ul class="about-list">
             <li class="about-item">
-              <img
+              <!-- <img
                 src="./images/best1.jpg"
                 width="270"
                 height="445"
                 alt="best1"
-              />
+              /> -->
             </li>
             <li class="about-item">
-              <img
+              <!-- <img
                 src="./images/best2.jpg"
                 width="270"
                 height="445"
                 alt="best2"
-              />
+              /> -->
             </li>
           </ul>
           <div class="about-wrap">
@@ -133,7 +185,7 @@
         </div>
       </section>
 
-      <section class="prices" id="prices">
+      <section class="prices container" id="prices">
         <div class="container">
           <p class="prices-uptitle uptitle">
             Spend your time with the best masters
@@ -220,7 +272,7 @@
       </section>
 
       <section class="barbers" id="barbers">
-        <div class="container">
+        <div class="container barbers-container">
           <p class="barbers-uptitle uptitle">
             For true enjoyers of the atmosphere
           </p>
@@ -228,12 +280,33 @@
           <ul class="barbers-list">
             <li class="barbers-item">
               <div class="barbers-top-wrap">
-                <img
-                  src="./images/img1.jpg"
-                  width="370"
-                  height="346"
-                  alt="John Smith"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/img1.jpg"
+                    width="370"
+                    height="346"
+                  />
+                  <source
+                    media="(min-width: 720px)"
+                    srcset="./images/img1-tab.jpg"
+                    width="450"
+                    height="346"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="./images/img1-mb.jpg"
+                    width="418"
+                    height="346"
+                  />
+
+                  <img
+                    src="./images/img1.jpg"
+                    width="370"
+                    height="346"
+                    alt="John Smith"
+                  />
+                </picture>
                 <p class="barbers-top-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Temporibus harum possimus officiis ab, assumenda expedita
@@ -275,12 +348,34 @@
             </li>
             <li class="barbers-item">
               <div class="barbers-top-wrap">
-                <img
-                  src="./images/img2.jpg"
-                  width="370"
-                  height="346"
-                  alt="Michele Doe"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/img2.jpg"
+                    width="370"
+                    height="346"
+                  />
+                  <source
+                    media="(min-width: 720px)"
+                    srcset="./images/img2-tab.jpg"
+                    width="450"
+                    height="346"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="./images/img2-mb.jpg"
+                    width="418"
+                    height="346"
+                  />
+
+                  <img
+                    src="./images/img2.jpg"
+                    width="370"
+                    height="346"
+                    alt="Michele Doe"
+                  />
+                </picture>
+
                 <p class="barbers-top-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Temporibus harum possimus officiis ab, assumenda expedita
@@ -322,12 +417,34 @@
             </li>
             <li class="barbers-item">
               <div class="barbers-top-wrap">
-                <img
-                  src="./images/img3.jpg"
-                  width="370"
-                  height="346"
-                  alt="Alan Black"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="./images/img3.jpg"
+                    width="370"
+                    height="346"
+                  />
+                  <source
+                    media="(min-width: 720px)"
+                    srcset="./images/img3-tab.jpg"
+                    width="450"
+                    height="346"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="./images/img3-mb.jpg"
+                    width="418"
+                    height="346"
+                  />
+
+                  <img
+                    src="./images/img3.jpg"
+                    width="370"
+                    height="346"
+                    alt="Alan Black"
+                  />
+                </picture>
+
                 <p class="barbers-top-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Temporibus harum possimus officiis ab, assumenda expedita
@@ -378,47 +495,128 @@
       </section>
 
       <section class="gallery">
-        <div class="container">
+        <div class="container gallery-container">
           <p class="gallery-uptitle uptitle">In Latin, "barba" means "beard"</p>
           <h2 hidden>Portfolio</h2>
           <ul class="gallery-list">
             <li class="gallery-item">
-              <img
-                src="./images/berd1.jpg"
-                width="270"
-                height="360"
-                alt="berd1"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/berd1.jpg"
+                  width="270"
+                  height="360"
+                />
+                <source
+                  media="(min-width: 720px)"
+                  srcset="./images/berd1-tab.jpg"
+                  width="330"
+                  height="360"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/berd1-mb.jpg"
+                  width="418"
+                  height="360"
+                />
+                <img
+                  src="./images/berd1.jpg"
+                  width="270"
+                  height="360"
+                  alt="berd1"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
-              <img
-                src="./images/berd2.jpg"
-                width="270"
-                height="360"
-                alt="berd2"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/berd2.jpg"
+                  width="270"
+                  height="360"
+                />
+                <source
+                  media="(min-width: 720px)"
+                  srcset="./images/berd2-tab.jpg"
+                  width="330"
+                  height="360"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/berd2-mb.jpg"
+                  width="418"
+                  height="360"
+                />
+                <img
+                  src="./images/berd2.jpg"
+                  width="270"
+                  height="360"
+                  alt="berd2"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
-              <img
-                src="./images/berd3.jpg"
-                width="270"
-                height="360"
-                alt="berd3"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/berd3.jpg"
+                  width="270"
+                  height="360"
+                />
+                <source
+                  media="(min-width: 720px)"
+                  srcset="./images/berd3-tab.jpg"
+                  width="330"
+                  height="360"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/berd3-mb.jpg"
+                  width="418"
+                  height="360"
+                />
+                <img
+                  src="./images/berd3.jpg"
+                  width="270"
+                  height="360"
+                  alt="berd3"
+                />
+              </picture>
             </li>
             <li class="gallery-item">
-              <img
-                src="./images/berd4.jpg"
-                width="270"
-                height="360"
-                alt="berd4"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/berd4.jpg"
+                  width="270"
+                  height="360"
+                />
+                <source
+                  media="(min-width: 720px)"
+                  srcset="./images/berd4-tab.jpg"
+                  width="330"
+                  height="360"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="./images/berd4-mb.jpg"
+                  width="418"
+                  height="360"
+                />
+                <img
+                  src="./images/berd4.jpg"
+                  width="270"
+                  height="360"
+                  alt="berd4"
+                />
+              </picture>
             </li>
           </ul>
         </div>
       </section>
+
       <div class="contacts-wrap">
-        <div class="container">
+        <div class="container online-container">
           <section class="online">
             <h2 class="online-title">Online-booking</h2>
             <form class="online-form">
@@ -481,13 +679,16 @@
                 </li>
               </ul>
             </address>
-            <p class="contacts-schedule-title">Working hours</p>
-            <p class="contacts-schedule-text">Every day from 9:00 to 22:00</p>
+            <div class="contact-schedule-wrap">
+              <p class="contacts-schedule-title">Working hours</p>
+              <p class="contacts-schedule-text">Every day from 9:00 to 22:00</p>
+            </div>
           </section>
         </div>
       </div>
     </main>
-    <footer class="footer">
+
+    <footer class="footer container">
       <p class="copyright">&#169; Copyright 2020</p>
       <ul class="footer-list">
         <li class="footer-item">
@@ -605,5 +806,6 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -4,10 +4,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 120px 0;
+  padding: 84px 31px;
   max-width: 1600px;
   margin: 0 auto;
 }
+
 .prices-uptitle {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;
@@ -18,7 +19,18 @@
 }
 .prices-wrap {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 20px 30px 40px;
+  //
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  @include desctop {
+    background: none;
+    flex-wrap: nowrap;
+    gap: 30px;
+    padding: 0;
+  }
+}
+.prices-list {
 }
 .prices-item {
   display: flex;
@@ -39,7 +51,7 @@
 }
 .prices-item-text {
   color: #9da4bd;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.67;
   letter-spacing: 0.36px;
 }
@@ -60,13 +72,22 @@
   margin-top: 44px;
 }
 .prices-list {
-  border: 1px solid white;
-  padding: 30px 20px;
-  width: calc((100% - 30px) / 2);
+  @include desctop {
+    padding: 30px 20px;
+    width: calc((100% - 30px) / 2);
+  }
 }
 .prices-list:first-child {
-  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  width: 100%;
+  margin-bottom: 20px;
+  @include desctop {
+    margin-bottom: 0;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
 }
 .prices-list:last-child {
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  width: 100%;
+  @include desctop {
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }

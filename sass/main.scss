@@ -1,6 +1,8 @@
 @import "./base/reset";
 @import "./utils/hide";
 @import "./utils/vars";
+@import "./utils/mixins";
+@import "./base/common";
 
 @import "./components/container";
 @import "./components/btn";
