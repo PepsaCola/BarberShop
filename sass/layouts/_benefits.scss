@@ -3,7 +3,7 @@
   @include tablet {
     padding: 100px 0;
   }
-  @include desctop {
+  @include desktop {
     padding: 120px 0;
   }
 }
@@ -16,7 +16,7 @@
   @include tablet {
     width: 720px;
   }
-  @include desctop {
+  @include desktop {
     width: 1200px;
 
     justify-content: center;
@@ -29,7 +29,7 @@
   @include tablet {
     width: 500px;
   }
-  @include desctop {
+  @include desktop {
     order: 2;
   }
 }
@@ -43,7 +43,7 @@
     width: 450px;
     margin-left: auto;
   }
-  @include desctop {
+  @include desktop {
     margin-left: 0;
     order: 1;
   }

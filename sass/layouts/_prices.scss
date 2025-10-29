@@ -21,9 +21,9 @@
   display: flex;
   flex-wrap: wrap;
   padding: 30px 20px 30px 40px;
-  //
+
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-  @include desctop {
+  @include desktop {
     background: none;
     flex-wrap: nowrap;
     gap: 30px;
@@ -72,7 +72,7 @@
   margin-top: 44px;
 }
 .prices-list {
-  @include desctop {
+  @include desktop {
     padding: 30px 20px;
     width: calc((100% - 30px) / 2);
   }
@@ -80,14 +80,14 @@
 .prices-list:first-child {
   width: 100%;
   margin-bottom: 20px;
-  @include desctop {
+  @include desktop {
     margin-bottom: 0;
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
 }
 .prices-list:last-child {
   width: 100%;
-  @include desctop {
+  @include desktop {
     background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }

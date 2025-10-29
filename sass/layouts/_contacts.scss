@@ -9,7 +9,7 @@
   background-size: cover;
   // background-size: calc(50% - 15px) 100%;
   width: 100%;
-  @include desctop {
+  @include desktop {
     width: calc(50% - 15px);
     background: none;
     padding-left: 100px;
@@ -18,7 +18,7 @@
 }
 .contacts-wrap {
   background-color: #191c26;
-  @include desctop {
+  @include desktop {
     background-image: url(../images/contacts-bg.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -34,7 +34,7 @@
   color: white;
   font-size: 42px;
   letter-spacing: 2.1px;
-  @include desctop {
+  @include desktop {
     text-align: start;
   }
 }
@@ -42,7 +42,7 @@
   font-style: inherit;
   margin-bottom: 44px;
   margin-top: 40px;
-  @include desctop {
+  @include desktop {
     margin-bottom: 70px;
   }
 }

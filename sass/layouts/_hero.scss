@@ -44,7 +44,7 @@
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
     ),
-    url(../../images/hero-bg-mob.jpg);
+    url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -55,7 +55,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .box {
-      background-image: url(../../images/hero-bg-mob-2x.jpg);
+      background-image: url(../images/hero-bg-mob-2x.jpg);
     }
   }
   @media screen and (min-width: 768px) {
@@ -64,12 +64,12 @@
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../../images/hero-bg-tab.jpg);
+      url(../images/hero-bg-tab.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .box {
-        background-image: url(../../images/hero-bg-tab-2x.jpg);
+        background-image: url(../images/hero-bg-tab-2x.jpg);
       }
     }
   }
@@ -79,12 +79,12 @@
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
       ),
-      url(../../images/Slider.jpg);
+      url(../images/Slider.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       .box {
-        background-image: url(../../images/Slider-2x.jpg);
+        background-image: url(../images/Slider-2x.jpg);
       }
     }
   }

@@ -4,7 +4,7 @@
   // padding-top: 130px;
   // padding-right: 30px;
   padding: 84px 31px;
-  @include desctop {
+  @include desktop {
     width: calc(50% + 15px);
     padding-top: 0;
   }
@@ -24,7 +24,7 @@
   color: white;
   font-size: 42px;
   letter-spacing: 2.1px;
-  @include desctop {
+  @include desktop {
     text-align: start;
   }
 }
@@ -33,10 +33,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 44px;
-  @include tablet {
+  @include desktop {
     gap: 30px;
   }
-  @include desctop {
+  @include desktop {
     justify-content: start;
   }
 }

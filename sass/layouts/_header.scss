@@ -15,8 +15,6 @@ header {
   fill: #ffffff;
   @include tablet {
     fill: #303030;
-  }
-  @include tablet {
     margin-right: 58px;
   }
 }
@@ -46,7 +44,7 @@ header a {
     gap: 20px;
     padding-top: 12px;
   }
-  @include desctop {
+  @include desktop {
     gap: 30px;
     padding-top: 20px;
     margin-left: 80px;
@@ -69,7 +67,7 @@ header a {
   width: 162px;
   gap: 20px;
 
-  @include desctop {
+  @include desktop {
     flex-wrap: nowrap;
     width: auto;
     margin-right: 17px;
@@ -86,7 +84,7 @@ header a {
     display: block;
     order: 2;
   }
-  @include desctop {
+  @include desktop {
     order: 1;
   }
 }
@@ -97,7 +95,7 @@ header a {
   background: none;
   font-weight: 600;
   font-size: 12px;
-  line-height: 1, 3333;
+  line-height: 1;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
@@ -109,7 +107,7 @@ header a {
     display: block;
     order: 1;
   }
-  @include desctop {
+  @include desktop {
     order: 2;
   }
 }
