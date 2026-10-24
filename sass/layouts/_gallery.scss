@@ -1,26 +1,26 @@
 .gallery {
   padding: 84px 0;
-  @media screen and (min-width: 763px) {
+  @include tablet {
     padding: 100px 0;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding: 120px 0;
   }
 }
 .gallery-container {
   margin: 0 auto;
-  width: 418px;
+  max-width: 448px;
   @include tablet {
-    width: 690px;
+    max-width: 720px;
   }
   @include desktop {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 .gallery-uptitle {
   color: #303030;
   margin-bottom: 71px;
-  @media screen and (min-width: 763px) {
+  @include tablet {
     margin-bottom: 44px;
   }
 }
@@ -30,11 +30,11 @@
   gap: 30px;
 }
 .gallery-item {
-  width: 418px;
-  @media screen and (min-width: 763px) {
+  width: 100%;
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 90px) / 4);
   }
 }

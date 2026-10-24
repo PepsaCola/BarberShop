@@ -55,10 +55,10 @@
   letter-spacing: 0.05em;
   color: #303030;
   padding-bottom: 20px;
-  width: 306px;
+  max-width: 306px;
   @include desktop {
     font-size: 42px;
-    width: auto;
+    max-width: none;
   }
 }
 .about-uptitle {

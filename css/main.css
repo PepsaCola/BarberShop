@@ -6,6 +6,7 @@
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 h1,
@@ -19,6 +20,7 @@ ul {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
 }
 
 .hide {
@@ -69,7 +71,7 @@ body {
   background: none;
   font-weight: 600;
   font-size: 12px;
-  line-height: 1;
+  line-height: 1, 3333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: #ffffff;
@@ -93,7 +95,7 @@ body {
 
 .uptitle {
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.36;
   text-transform: uppercase;
   display: flex;
@@ -111,6 +113,8 @@ body {
 .backdrop {
   position: fixed;
   top: 0;
+  left: 0;
+  z-index: 2;
   width: 100%;
   height: 100%;
   background-color: rgba(48, 48, 48, 0.563);
@@ -119,8 +123,10 @@ body {
 
 .model {
   position: absolute;
-  width: 500px;
-  min-height: 550px;
+  width: calc(100% - 30px);
+  max-width: 500px;
+  max-height: calc(100% - 30px);
+  overflow-y: auto;
   background-color: #fff;
   border-radius: 5px;
   top: 50%;
@@ -295,10 +301,25 @@ header {
   width: 100%;
   margin-top: 40px;
 }
+@media screen and (min-width: 768px) {
+  header {
+    padding: 0;
+  }
+}
 
 .header-contaiter {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header-contaiter {
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contaiter {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -471,14 +492,16 @@ header a {
 }
 
 .menu-list {
-  margin-top: 118px;
+  margin-top: 108px;
 }
 
 .menu-item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 4px;
 }
 
 .menu-link {
+  display: block;
+  padding: 10px 0;
   color: #303030;
   font-size: 18px;
   font-weight: 600;
@@ -486,13 +509,14 @@ header a {
 }
 
 .menu-contact {
+  padding: 10px 0;
   color: #303030;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  margin-top: 64px;
-  margin-bottom: 19px;
+  margin-top: 54px;
+  margin-bottom: 9px;
 }
 
 .menu-button {
@@ -539,7 +563,7 @@ header a {
 }
 @media screen and (min-width: 768px) {
   .hero-container {
-    max-width: 720px;
+    max-width: none;
     padding: 0 15px;
   }
 }
@@ -590,9 +614,9 @@ header a {
   padding: 210px 30px;
   flex-grow: 1;
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-wrap .box {
-    background-image: url(../images/hero-bg-mob-2x.jpg);
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero-bg-mob-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -601,9 +625,9 @@ header a {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero-bg-tab.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero-wrap .box {
-    background-image: url(../images/hero-bg-tab-2x.jpg);
+@media screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/hero-bg-tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -612,14 +636,14 @@ header a {
     background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/Slider.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero-wrap .box {
-    background-image: url(../images/Slider-2x.jpg);
+@media screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-wrap {
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/Slider-2x.jpg);
   }
 }
 
 .hero-title {
-  font-size: 42px;
+  font-size: clamp(36px, 11vw, 42px);
   line-height: 1.1666666667;
   letter-spacing: 0.05em;
   color: #ffffff;
@@ -652,7 +676,7 @@ header a {
 }
 
 .hero-link {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.2em;
   line-height: 1.36;
@@ -741,12 +765,12 @@ header a {
   letter-spacing: 0.05em;
   color: #303030;
   padding-bottom: 20px;
-  width: 306px;
+  max-width: 306px;
 }
 @media screen and (min-width: 1200px) {
   .section-title {
     font-size: 42px;
-    width: auto;
+    max-width: none;
   }
 }
 
@@ -794,9 +818,14 @@ header a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 84px 31px;
+  padding: 84px 0;
   max-width: 1600px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .prices {
+    padding: 84px 31px;
+  }
 }
 
 .prices-uptitle {
@@ -812,7 +841,14 @@ header a {
 .prices-wrap {
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 20px 30px 40px;
+  padding: 30px 20px;
+}
+@media screen and (min-width: 480px) {
+  .prices-wrap {
+    padding: 30px 20px 30px 40px;
+  }
+}
+.prices-wrap {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 @media screen and (min-width: 1200px) {
@@ -853,6 +889,10 @@ header a {
 
 .prices-item-text:first-child {
   order: -1;
+}
+
+.prices-item-text:last-child {
+  white-space: nowrap;
 }
 
 .prices-btn {
@@ -915,16 +955,16 @@ header a {
   margin: 0 auto;
   gap: 130px;
   flex-wrap: wrap;
-  width: 418px;
+  max-width: 448px;
 }
 @media screen and (min-width: 768px) {
   .benefits-container {
-    width: 720px;
+    max-width: 720px;
   }
 }
 @media screen and (min-width: 1200px) {
   .benefits-container {
-    width: 1200px;
+    max-width: 1200px;
     justify-content: center;
   }
 }
@@ -932,11 +972,11 @@ header a {
 .benefits-wrap {
   padding-top: 9px;
   order: 1;
-  width: 418px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .benefits-wrap {
-    width: 500px;
+    max-width: 500px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -947,7 +987,7 @@ header a {
 
 .benefits-list {
   display: flex;
-  width: 418px;
+  width: 100%;
   flex-wrap: wrap;
   flex-shrink: 0;
   order: 2;
@@ -966,11 +1006,16 @@ header a {
 }
 
 .benefits-item {
-  width: 194px;
+  width: calc((100% - 30px) / 2);
   height: 133px;
   background: #f7f7f7;
-  padding: 20px 24px;
+  padding: 20px 12px;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .benefits-item {
+    padding: 20px 24px;
+  }
 }
 @media screen and (min-width: 768px) {
   .benefits-item {
@@ -1009,7 +1054,7 @@ header a {
 .benefits-item-text {
   text-align: center;
   color: #303030;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.36;
   font-weight: 600;
 }
@@ -1050,16 +1095,16 @@ header a {
 
 .barbers-container {
   margin: 0 auto;
-  width: 418px;
+  max-width: 448px;
 }
 @media screen and (min-width: 768px) {
   .barbers-container {
-    width: 450px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 1200px) {
   .barbers-container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1111,7 +1156,12 @@ header a {
 }
 
 .barbers-item {
-  width: 418px;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .barbers-item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .barbers-item:hover .barbers-top-text {
@@ -1170,7 +1220,7 @@ header a {
 .gallery {
   padding: 84px 0;
 }
-@media screen and (min-width: 763px) {
+@media screen and (min-width: 768px) {
   .gallery {
     padding: 100px 0;
   }
@@ -1183,16 +1233,16 @@ header a {
 
 .gallery-container {
   margin: 0 auto;
-  width: 418px;
+  max-width: 448px;
 }
 @media screen and (min-width: 768px) {
   .gallery-container {
-    width: 690px;
+    max-width: 720px;
   }
 }
 @media screen and (min-width: 1200px) {
   .gallery-container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1200,7 +1250,7 @@ header a {
   color: #303030;
   margin-bottom: 71px;
 }
-@media screen and (min-width: 763px) {
+@media screen and (min-width: 768px) {
   .gallery-uptitle {
     margin-bottom: 44px;
   }
@@ -1213,9 +1263,9 @@ header a {
 }
 
 .gallery-item {
-  width: 418px;
+  width: 100%;
 }
-@media screen and (min-width: 763px) {
+@media screen and (min-width: 768px) {
   .gallery-item {
     width: calc((100% - 30px) / 2);
   }
@@ -1293,7 +1343,7 @@ header a {
   position: absolute;
   left: 0;
   color: rgba(157, 164, 189, 0.4);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.1px;
@@ -1427,7 +1477,7 @@ header a {
 
 .contacts-schedule-title {
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.36;
   text-transform: uppercase;
   color: #ffffff;
@@ -1452,8 +1502,11 @@ header a {
 }
 
 .footer {
-  padding: 56px 0;
+  padding: 56px 15px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -1473,7 +1526,7 @@ header a {
 
 .footer-link {
   color: #303030;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 2.2px;
   text-decoration: none;
@@ -1482,4 +1535,6 @@ header a {
 
 .footer-link:hover {
   color: #ff6c00;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

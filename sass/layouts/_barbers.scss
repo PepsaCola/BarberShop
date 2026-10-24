@@ -10,12 +10,13 @@
 }
 .barbers-container {
   margin: 0 auto;
-  width: 418px;
+  // Ширина з урахуванням відступів .container (по 15px з боків)
+  max-width: 448px;
   @include tablet {
-    width: 450px;
+    max-width: 480px;
   }
   @include desktop {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 .barbers-uptitle {
@@ -58,8 +59,10 @@
   background-image: url(../images/img1-mb.jpg);
 }
 .barbers-item {
-  // width: calc((100% - 60px) / 3);
-  width: 418px;
+  width: 100%;
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .barbers-item:hover .barbers-top-text {
   transform: translateY(0);

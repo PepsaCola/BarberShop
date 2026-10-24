@@ -1,7 +1,10 @@
 .footer {
-  padding: 56px 0;
+  // Бокові 15px як у .container, інакше текст липне до країв екрана
+  padding: 56px 15px;
   display: flex;
-
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -22,7 +25,7 @@
 }
 .footer-link {
   color: #303030;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 2.2px;
   text-decoration: none;

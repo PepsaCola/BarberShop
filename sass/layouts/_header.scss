@@ -3,11 +3,21 @@ header {
   position: absolute;
   width: 100%;
   margin-top: 40px;
+  @include tablet {
+    padding: 0;
+  }
 }
 
 .header-contaiter {
   display: flex;
   justify-content: space-between;
+  // Ширина як у hero, щоб логотип стояв над білою колонкою з соцмережами
+  @include tablet {
+    max-width: none;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -150,12 +160,16 @@ header a {
   height: 40px;
 }
 .menu-list {
-  margin-top: 118px;
+  margin-top: 108px;
 }
+// Пункти меню 44px заввишки, щоб у них легко було влучити пальцем.
+// Відступи зменшені на ту саму величину, тому меню виглядає як раніше
 .menu-item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 4px;
 }
 .menu-link {
+  display: block;
+  padding: 10px 0;
   color: #303030;
   font-size: 18px;
 
@@ -163,13 +177,14 @@ header a {
   letter-spacing: 1.8px;
 }
 .menu-contact {
+  padding: 10px 0;
   color: #303030;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  margin-top: 64px;
-  margin-bottom: 19px;
+  margin-top: 54px;
+  margin-bottom: 9px;
 }
 .menu-button {
   display: block;

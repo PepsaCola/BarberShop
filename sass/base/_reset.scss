@@ -5,6 +5,8 @@
 img {
   display: block;
   width: 100%;
+  // Висота з атрибутів height лишається пропорцією, тому фото не сплющуються
+  height: auto;
 }
 h1,
 h2 {
@@ -16,4 +18,5 @@ ul {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #ffffff;
 }
